@@ -14,7 +14,7 @@ defmodule HookBeast do
       import * as hooks from '#{js_path}';
 
       Object.keys(hooks).forEach(key => {
-        liveSocket.addHookDynamically(key, hooks[key]);
+        liveSocket.addHook(key, hooks[key]);
       })
     </script>
     """

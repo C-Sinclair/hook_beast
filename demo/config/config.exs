@@ -34,8 +34,6 @@ js_files =
   |> Enum.map(&Path.join("../", &1))
   |> Enum.join(" ")
 
-#
-# Configure esbuild (the version is required)
 config :esbuild,
   version: "0.14.29",
   default: [
